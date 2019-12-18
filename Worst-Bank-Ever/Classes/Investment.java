@@ -26,13 +26,28 @@ class Investments
   }
    public void Investments1()
   {
-
+          
+    
+    //Starts off with 0 in both accounts
+        this.setCD(0);
+        this.setMMA(0);
+    
+    
+    
       Investments.displayType();
       System.out.println("You have $" + this.getCD()+ " In your Certificate of Deposit account");
       System.out.println("You have $" + this.getMMA()+ " In your Money Market account");
    
+   
+   
+   
+   
+   
+   
+   
+   
     //for while statement
-     int loopy = 0;
+     int loopy = 0
    
    while(loopy!=2)
    {
@@ -110,8 +125,8 @@ class Investments
     
    
          //Deposit,withdraw,transfer
-        this.setCD(0 + x -  a + trans4);
-        this.setMMA(0 + y - b + trans6);
+        this.setCD(this.getCD() + x -  a + trans4);
+        this.setMMA(this.getMMA() + y - b + trans6);
     
     
          //Take away from Checking account
@@ -141,8 +156,11 @@ class Investments
              
         System.out.print("Would you like to continue using our bank's investment services, type 1 for yes, 2 for no");
         loopy = keyboard1.nextInt();
-                      
-    }
+             
+             
+             
+             
+             
   }
   
   
